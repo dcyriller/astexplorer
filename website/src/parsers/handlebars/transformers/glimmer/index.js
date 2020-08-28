@@ -28,6 +28,7 @@ export default {
       transformModule;
 
     let ast = glimmer.preprocess(code, {
+      mode: "codemod",
       plugins: {
         ast: [transform],
       },
